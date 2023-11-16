@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+		/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Caesarova šifra</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="caesar_cipher.js"></script>
+	</head>
+	<body>
+		<form>
+			<fieldset>
+				<legend>Caesarova šifra</legend>
+				<table>
+					<tr>
+						<th><label for="upper_case_shift">Posunutí velkých písmen:</label></th>
+						<td><input id="upper_case_shift" name="upper_case_shift" value="5" /></td>
+					</tr>
+					<tr>
+						<th><label for="lower_case_shift">Posunutí malých písmen:</label></th>
+						<td><input id="lower_case_shift" name="lower_case_shift" value="10" /></td>
+					</tr>
+					<tr>
+						<th><label for="input_text">Text k zašifrování:</label></th>
+						<td><textarea id="input_text" name="input_text" rows="8" cols="40"></textarea></td>
+					</tr>
+					<tr>
+						<th><label for="output_text">Zašifrovaný text:</label></th>
+						<td><textarea id="output_text" name="output_text" rows="8" cols="40"></textarea></td>
+					</tr>
+					<tr><th colspan="2"><button>Zašifruj!</button></th></tr>
+				</table>
+			</fieldset>
+		</form>
+	</body>
+</html>
